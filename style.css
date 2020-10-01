@@ -1,4 +1,4 @@
-/* Style the header with a grey background and some padding */
+/* Style the header with a background and some padding */
 .header {
   overflow: hidden;
   background-color: #379c6a;
@@ -52,6 +52,35 @@
     display: block;
     text-align: left;
   }
+}
   .header-right {
-    float: none;
+    float: right;
   }
+
+.footer {
+  background-color: #379c6a;
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:60px;
+  width:100%;
+}
+
+.footer p {
+  font-family: sans-serif;
+  font: verdana;
+  color: white;
+  text-align: center;
+  margin-top: -2px;
+}
+
+.footer-title {
+  font-family: sans-serif;
+  font: verdana;
+  color: white;
+  float: center;
+  text-align: center;
+  size: 24px;
+  font-weight: bold;
+  padding-top: 5px
+}
