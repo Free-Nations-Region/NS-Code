@@ -1,1 +1,0 @@
-Developed by Heaveria with the support of Drehtisch (Tigernia)

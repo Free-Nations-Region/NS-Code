@@ -9,7 +9,7 @@
 .header a {
   float: left;
   color: white;
-  text-align: center;
+  text-align: right;
   padding: 12px;
   margin: 5px;
   text-decoration: none;
@@ -47,40 +47,13 @@
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
-  .header a {
-    float: none;
+  .header a.logo {
+    float: left;
     display: block;
-    text-align: left;
+    text-align: center;
   }
-}
+
   .header-right {
-    float: right;
+    float: left;
   }
-
-.footer {
-  background-color: #379c6a;
-  position: fixed;
-  left:0px;
-  bottom:0px;
-  height:60px;
-  width:100%;
-}
-
-.footer p {
-  font-family: sans-serif;
-  font: verdana;
-  color: white;
-  text-align: center;
-  margin-top: -2px;
-}
-
-.footer-title {
-  font-family: sans-serif;
-  font: verdana;
-  color: white;
-  float: center;
-  text-align: center;
-  size: 24px;
-  font-weight: bold;
-  padding-top: 5px
 }
