@@ -15,11 +15,11 @@ function generateApiUrl(nr,uAgent,name,shard) {
     };
     
     if (nr == "nation") {
-            url = "https://www.nationstates.net/cgi-bin/api.cgi?nation=" + name + "&q=" + shards; 
+            url = "https://www.nationstates.net/cgi-bin/api.cgi?userAgent=https://ns.heaveria.com%20(In%20use%20by%20nation:%20" + uAgent + "&nation=" + name + "&q=" + shards; 
         } else if (nr== "region") {
-            url = "https://www.nationstates.net/cgi-bin/api.cgi?region=" + name + "&q=" + shards;
+            url = "https://www.nationstates.net/cgi-bin/api.cgi?userAgent=https://ns.heaveria.com%20(In%20use%20by%20nation:%20" + uAgent + "&region=" + name + "&q=" + shards;
         } else if (nr == "dispatch") {
-            url = "https://www.nationstates.net/cgi-bin/api.cgi?q=" + shards;
+            url = "https://www.nationstates.net/cgi-bin/api.cgi?userAgent=https://ns.heaveria.com%20(In%20use%20by%20nation:%20" + uAgent + "&q=" + shards;
         };    
     console.log(url);
     resultBox.innerHTML = resultBox.innerHTML + "\n>URL created...";

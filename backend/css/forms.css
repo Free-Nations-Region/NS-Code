@@ -40,6 +40,10 @@ input[type=button] {
   font-size: 20px
 }
 
+input[type=button]:disabled {
+    background-color: gray;
+}
+
 /* Style the container */
 .container {
   border-radius: 5px;

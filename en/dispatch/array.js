@@ -16,7 +16,7 @@ function getDispatches() {
     dispatchRequestStatus = true;
     var rateLimit = setInterval(function() {
         if (dispatchIndex < ids.length) {
-            var dispatchUrl = ["https://www.nationstates.net/cgi-bin/api.cgi?q=dispatch;dispatchid=" + ids[dispatchIndex]];
+            var dispatchUrl = ["https://www.nationstates.net/cgi-bin/api.cgi?userAgent=https://ns.heaveria.com%20(In%20use%20by%20nation:%20" + uAgent + "&q=dispatch;dispatchid=" + ids[dispatchIndex]];
             jsonRequest(dispatchUrl, uAgent);
             resultBox.innerHTML = resultBox.innerHTML + "\n>Dispatch --> " + (dispatchIndex + 1) + "/" + ids.length;
         } else {

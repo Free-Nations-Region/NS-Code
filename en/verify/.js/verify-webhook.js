@@ -115,7 +115,7 @@ async function fail(nation, checksum, discordId, region) {
                             embeds: [
                                 {
                                     // decimal number colour of the side of the embed
-                                    color: regionColor,
+                                    color: 16711680,
                                     // author
                                     // - icon next to text at top (text is a link)
                                     author: {

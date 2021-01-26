@@ -10,9 +10,10 @@
     <link rel="icon" type="image/png" href="/backend/Images/favicon.ico"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="/en/dispatch/inputOutput.js" defer></script>
     <script src="/en/dispatch/array.js" defer></script>
     <script src="/en/dispatch/fetch.js" defer></script>
-    <script src="/en/dispatch/inputOutput.js" defer></script>
+    
 </head>
 
 <body>
@@ -37,6 +38,7 @@
             </div>
             <div class="col-75">
             <input type="text" id="uAgent" name="uAgent" placeholder="Nation Name">
+            <p>Typically your nation name. This lets NationStates know who is using this tool.</p>
             </div>
         </div>
 
@@ -46,6 +48,7 @@
             </div>
             <div class="col-75">
             <input type="text" id="nName" name="nName" placeholder="Nation Name">
+            <p>Without the prefix! (e.g. Testlandia)</p>
             </div>
         </div>
 
@@ -55,7 +58,7 @@
         
         <div class="result">
             <div class="resultBox">
-                <textarea disabled id="resultBox" rows="10">>Waiting on Input...</textarea>
+                <textarea readonly id="resultBox" rows="10">>Waiting on Input...</textarea>
             </div>
         </div>
 
