@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>NS-API GUI</title>
+    <link href="/backend/css/header.css" rel="stylesheet" type="text/css"/>
+	<link href="/backend/css/forms.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="/backend/Images/favicon.ico"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="/en/dispatch/array.js" defer></script>
+    <script src="/en/dispatch/fetch.js" defer></script>
+    <script src="/en/dispatch/inputOutput.js" defer></script>
+</head>
+
+<body>
+<!--Header: Active = Current Page-->
+    <header>
+        <div class="header">
+            <a href="/index.html" class="logo">NS CODE</a>
+            <div class="header-right">
+                <a class="passive" href="/index.html">Home</a>
+                <a class="active" href="/en/dispatch/form.html">Dispatch Backup</a>
+                <a class="passive" href="/en/verify/form.html">Verification</a>
+                <a href="https://www.nationstates.net/nation=heaveria" target="_blank">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Code starts here:-->
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="uAgent">User Agent</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="uAgent" name="uAgent" placeholder="Nation Name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="nName">Nation Name</label>
+            </div>
+            <div class="col-75">
+            <input type="text" id="nName" name="nName" placeholder="Nation Name">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="button" id="submitDispatchButton" value="Submit">
+        </div>
+        
+        <div class="result">
+            <div class="resultBox">
+                <textarea disabled id="resultBox" rows="10">>Waiting on Input...</textarea>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+

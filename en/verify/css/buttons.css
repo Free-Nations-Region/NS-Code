@@ -1,0 +1,50 @@
+.waiting {
+    display: none;
+    
+    background: rgb(255, 231, 96);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+
+    font-size: 24px;
+    text-align: center;
+
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+.failed {
+    display: none;
+    
+    background: rgb(241, 73, 73);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+
+    font-size: 24px;
+    text-align: center;
+
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+.success {
+    display: none;
+    
+    background: rgb(31, 133, 56);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+
+    font-size: 24px;
+    text-align: center;
+
+    padding: 10px;
+    height: auto;
+    width: auto;
+}

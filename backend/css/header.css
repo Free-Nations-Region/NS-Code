@@ -1,7 +1,7 @@
 /* Style the header with a background and some padding */
 .header {
   overflow: hidden;
-  background-color: #379c6a;
+  background-color: #00305b;
   padding: 20px 10px;
 }
 
@@ -36,7 +36,7 @@
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: #2fb977;
+  background-color: #0b589b;
   color: white;
 }
 
