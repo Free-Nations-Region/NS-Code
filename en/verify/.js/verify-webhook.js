@@ -4,11 +4,10 @@ var regionPicture;
 var regionColor;
 
 var wData = {
-    // USE OF THIS DATA IS FORBIDDEN!!
-    'wFNR' : 'https://discord.com/api/webhooks/802689627412496384/WxhmtCPiZOGB-vgEmLN14HLbrSJVyAYcmGjGeaRKNKFsZeCE0dZBm7Yae3KzZGcVvA4q',
+    'wFNR' : 'https://api.the-fnr.com/webhook-pass-through?target=fnr',
     'pFNR' : 'https://i.imgur.com/2S8woDF.png',
     'cFNR' : 3644522,
-    'wKS' : 'https://discordapp.com/api/webhooks/803650866912559135/lJ8KBOrWbAU84-2ssqlV4b1O1nXOjxiUPp5SiSNJiyaY9eQXXz5ec_cP3MND7OdB7iLy',
+    'wKS' : 'https://api.the-fnr.com/webhook-pass-through?target=ks',
     'pKS' : 'https://i.imgur.com/5K4voKm.png',
     'cKS' : 2201331
 }
@@ -42,10 +41,6 @@ async function success(nation, checksum, discordId, region) {
                                 // contents of the message to be sent
                                 content:
                                     '✅ Result:',
-                                // enable mentioning of individual users or roles, but not @everyone/@here
-                                allowed_mentions: {
-                                    parse: ['users', 'roles'],
-                                },
                                 // embeds to be sent
                                 embeds: [
                                     {
@@ -73,7 +68,7 @@ async function success(nation, checksum, discordId, region) {
                                             },
                                             {
                                                 name: '**Discord ID:**',
-                                                value: discordId,
+                                                value: discordId + "\n",
                                             },
                                         ],
                                         // footer
@@ -107,10 +102,6 @@ async function fail(nation, checksum, discordId, region) {
                             // contents of the message to be sent
                             content:
                                 '❌ Result:',
-                            // enable mentioning of individual users or roles, but not @everyone/@here
-                            allowed_mentions: {
-                                parse: ['users', 'roles'],
-                            },
                             // embeds to be sent
                             embeds: [
                                 {

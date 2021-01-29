@@ -10,12 +10,17 @@ async function checkVerification() {
     // Get Data
     var nation = document.getElementById("nName").value;
     var checksum = document.getElementById("vCode").value;
-    var discordId = document.getElementById("discordId").value;
+  	if (document.getElementById("discordId").value == "") {
+      var discordId = "N/A";
+    } else {
+      var discordId = document.getElementById("discordId").value;
+    };
+  
     if (document.getElementById("rFNR").checked) {
         var region = document.getElementById("rFNR").value;
     } else if (document.getElementById("rKS").checked) {
         var region = document.getElementById("rKS").value;
-    }
+    };
     var url = "https://www.nationstates.net/cgi-bin/api.cgi?userAgent=https://ns.heaveria.com%20(In%20use%20by%20nation:%20" + nation + ")&a=verify&nation=" + nation + "&checksum=" + checksum;
     resultBox.innerHTML = resultBox.innerHTML + "\n>Request formatted for " + nation + "...\n>Sending API request...";
 
